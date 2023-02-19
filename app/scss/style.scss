@@ -4,6 +4,111 @@
 @import 'global';
 
 
+.header {
+  padding: 50px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+    padding-left: 35px;
+  }
+
+  &__list-link {
+    font-size: 15px;
+    line-height: 12px;
+    color: #436372;
+    @extend %rubik-500;
+  }
+
+}
+
+.user-nav {
+  display: flex;
+
+  &__link {
+    position: relative;
+  }
+
+  &__link+.user-nav__link {
+    margin-left: 55px;
+  }
+
+  &__link-bg {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  &__link-bg::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/bg/search-bg.png);
+    width: 51px;
+    height: 51px;
+    left: -18px;
+    top: -18px;
+  }
+
+  &__link-bg::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/bg/ellipse-bg.png);
+    width: 51px;
+    height: 51px;
+    left: 242px;
+    top: -16px;
+  }
+
+  &__link-bgtwo {
+    position: relative;
+    padding-left: 20px;
+  }
+
+  &__link-bgtwo::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/bg/heart-bg.png);
+    width: 180px;
+    height: 51px;
+    left: -187px;
+    top: -18px;
+    z-index: -10;
+  }
+
+  &__link-bgtwo::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/bg/cart-bg.png);
+    width: 2px;
+    height: 34px;
+    left: -98px;
+    top: -10px;
+  }
+
+  &__num {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: -9px;
+    right: -14px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #243f4d;
+    text-align: center;
+
+  }
+}
 
 
 @import 'media';
