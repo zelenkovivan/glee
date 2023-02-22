@@ -111,4 +111,129 @@
 }
 
 
+
+.footer-top {
+  padding: 70px 0 ;
+  border-bottom: 1px solid #a3bbc8;
+  display: flex;
+
+  &__contact {
+    width: 240px;
+    margin-right: 60px;
+  }
+
+  &__nav {
+    width: 130px;
+    margin-right: 160px;
+  }
+
+  &__account{
+    width: 110px;
+    margin-right: 197px;
+  }
+
+  &__item-form {
+    max-width: 480px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  &__adress,
+  &__email,
+  &__phone {
+    margin-bottom: 14px;
+    display: block;
+    font-size: 14px;
+      line-height: 24px;
+      color: $default;
+      @extend %rubik-400;
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  &__social-item+.footer-top__social-item {
+    padding-left: 18px;
+  }
+
+  &__title {
+    @extend %sans-700;
+    color: $title2;
+    font-size: 22px;
+    line-height: 50px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    margin-bottom: 12px;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    @extend %rubik-400;
+    color: $default;
+  }
+
+  &__text {
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 24px;
+    @extend %rubik-400;
+    color: $default;
+    margin-bottom: 30px;
+  }
+
+  &__form-input {
+    background-color: #fef7f0;
+    max-width: 170px;
+    width: 100%;
+    border: none;
+    padding: 12px 10px 12px 15px;
+
+    &::placeholder {
+      color: #234969;
+      font-size: 12px;
+      @extend %sans-400;
+    }
+  }
+
+  &__form-btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px 10px 12px;
+    color: #fff;
+    background-color: #a3bbc8;
+    @extend %sans-400;
+  }
+}
+
+.footer-bottom {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  @extend %rubik-400;
+  color: $default;
+
+  &__list {
+    display: flex;
+  }
+  &__link{
+    margin-left: 13px;
+    color: $default;
+    span{
+      margin-left: 13px;
+    }
+  }
+}
+
+
 @import 'media';
